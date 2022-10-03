@@ -26,7 +26,7 @@ export const MangaScreen: FC = () => {
           <ul className='px-6 grid grid-cols-4 gap-10 items-center py-8 text-center'>
             {manga.pages.map((page) =>
               page.data.map((repo: AnimeDataParams) => (
-                <MangaItem item={repo} />
+                <MangaItem item={repo} key={repo.mal_id} />
               ))
             )}
           </ul>

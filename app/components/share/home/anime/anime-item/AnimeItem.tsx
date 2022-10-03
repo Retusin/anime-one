@@ -10,7 +10,7 @@ interface AnimeItemParams {
 }
 
 export const AnimeItem: FC<AnimeItemParams> = ({ item }) => (
-  <Link key={item.mal_id} href={`/anime/${item.mal_id}`}>
+  <Link href={`/anime/${item.mal_id}`}>
     <li className={styles.item}>
       <div className={styles.item_wrapper}>
         <div className={styles.item_card}>

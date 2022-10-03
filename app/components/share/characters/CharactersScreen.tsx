@@ -27,7 +27,7 @@ export const CharactersScreen: FC = () => {
         <ul className='px-6 grid grid-cols-6 gap-10 items-center py-8 text-center items-baseline'>
           {characters.pages.map((page) =>
             page.data.map((repo: CharactersParams) => (
-              <CharacterItem item={repo} />
+              <CharacterItem item={repo} key={repo.mal_id} />
             ))
           )}
         </ul>

@@ -8,9 +8,13 @@ interface CardParams {
 }
 
 export const Card: FC<CardParams> = ({ item, isAnime }) => {
-  const animeGenres = item.genres?.map((anime) => <div>{anime.name}</div>);
+  const animeGenres = item.genres?.map((anime) => (
+    <div key={anime.mal_id}>{anime.name}</div>
+  ));
   const animeGenre = animeGenres?.slice(0, 1);
-  const animeStudios = item?.studios?.map((anime) => <div>{anime.name}</div>);
+  const animeStudios = item?.studios?.map((anime) => (
+    <div key={anime.mal_id}>{anime.name}</div>
+  ));
   const animeStudio = animeStudios?.slice(0, 1);
   return (
     <div className='pt-10'>

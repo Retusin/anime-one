@@ -1,7 +1,5 @@
 import Link from 'next/link';
-import { FC } from 'react';
-
-import { Button } from '@/components/ui';
+import React, { FC } from 'react';
 
 export const Hero: FC = () => (
   <div className='bg-violet-200 shadow-lg dark:bg-violet-900'>
@@ -25,7 +23,12 @@ export const Hero: FC = () => (
         </p>
         <div className='py-4'>
           <Link href='/anime'>
-            <Button title='Show All' />
+            <button
+              type='button'
+              className='py-2 px-4 max-w-[max-content]  bg-violet-600 hover:bg-violet-700 focus:ring-violet-500 focus:ring-offset-violet-200 text-white transition ease-in duration-200 text-text-center text-[24px] font-semibold shadow-md mx-auto rounded-lg '
+            >
+              Show All
+            </button>
           </Link>
         </div>
       </div>

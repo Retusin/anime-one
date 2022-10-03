@@ -1,4 +1,3 @@
-export * from './button/Button';
 export * from './card/Card';
 export * from './card-footer/CardFooter';
 export * from './card-video/CardVideo';

@@ -1,8 +1,7 @@
 import { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-
-import { Button } from '@/components/ui';
+import React from 'react';
 
 const NotFound: NextPage = () => (
   <div>
@@ -23,7 +22,12 @@ const NotFound: NextPage = () => (
           </p>
           <Link href='/'>
             <a className='w-full text-center'>
-              <Button title='Go back' />
+              <button
+                type='button'
+                className='py-2 px-4 max-w-[max-content]  bg-violet-600 hover:bg-violet-700 focus:ring-violet-500 focus:ring-offset-violet-200 text-white transition ease-in duration-200 text-text-center text-[24px] font-semibold shadow-md mx-auto rounded-lg '
+              >
+                Go Back
+              </button>
             </a>
           </Link>
         </div>

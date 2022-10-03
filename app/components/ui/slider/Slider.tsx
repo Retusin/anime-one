@@ -25,7 +25,7 @@ export const Slider: FC<SliderParams> = ({ item, title, isAnime }) => (
         }}
       >
         {item.anime.map((anime) => (
-          <Link href={`/anime/${anime.anime.mal_id}`}>
+          <Link key={anime.anime.mal_id} href={`/anime/${anime.anime.mal_id}`}>
             <SplideSlide>
               <Image
                 src={anime.anime.images.jpg.large_image_url}
@@ -51,7 +51,7 @@ export const Slider: FC<SliderParams> = ({ item, title, isAnime }) => (
         }}
       >
         {item.manga.map((anime) => (
-          <Link href={`/manga/${anime.manga.mal_id}`}>
+          <Link key={anime.manga.mal_id} href={`/manga/${anime.manga.mal_id}`}>
             <SplideSlide>
               <Image
                 src={anime.manga.images.jpg.large_image_url}

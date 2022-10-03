@@ -37,7 +37,7 @@ export const AnimeScreen: FC = () => {
           <ul className={styles.anime_list}>
             {data.pages.map((page) =>
               page.data.map((repo: AnimeDataParams) => (
-                <AnimeItem item={repo} />
+                <AnimeItem item={repo} key={repo.mal_id} />
               ))
             )}
           </ul>

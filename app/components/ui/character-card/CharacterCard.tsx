@@ -23,7 +23,9 @@ export const CharacterCard: FC<CharacterCardParams> = ({ item }) => (
             <span className='font-semibold text-[20px]'>Nicknames: </span>
             <ul className='mt-4'>
               {item.nicknames.map((nick) => (
-                <li className='mb-4'>{nick}</li>
+                <li className='mb-4' key={nick}>
+                  {nick}
+                </li>
               ))}
             </ul>
           </div>

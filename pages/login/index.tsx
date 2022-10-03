@@ -1,8 +1,7 @@
 import Link from 'next/link';
-import { FC } from 'react';
+import React, { FC } from 'react';
 
 import { Logo } from '@/components/layout';
-import { Button } from '@/components/ui';
 
 const LoginPage: FC = () => (
   <div className='flex flex-wrap w-full'>
@@ -54,7 +53,12 @@ const LoginPage: FC = () => (
               />
             </div>
           </div>
-          <Button title='login' />
+          <button
+            type='button'
+            className='py-2 px-4 max-w-[max-content]  bg-violet-600 hover:bg-violet-700 focus:ring-violet-500 focus:ring-offset-violet-200 text-white transition ease-in duration-200 text-text-center text-[24px] font-semibold shadow-md mx-auto rounded-lg '
+          >
+            Show All
+          </button>
         </form>
         <div className='pt-12 pb-12 text-center'>
           <p>
