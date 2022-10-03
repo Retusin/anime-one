@@ -12,7 +12,7 @@ export const AnimeIdScreen: FC<AnimeIdParams> = ({ anime }) => {
 
   return (
     <Layout title={anime.title}>
-      <div className='my-12 text-black'>
+      <div className='my-12 container mx-auto px-8 text-black'>
         <Card item={anime} isAnime />
         <CardVideo item={anime} />
         <CardFooter item={anime} />

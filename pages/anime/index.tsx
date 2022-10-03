@@ -1,7 +1,13 @@
+import dynamic from 'next/dynamic';
 import { FC } from 'react';
 
-import { AnimeScreen } from '@/components/share';
+const DynamicAnimeScreen = dynamic(
+  () =>
+    import('@/components/share/anime-page/AnimeScreen').then(
+      (mod) => mod.AnimeScreen
+    ) as any
+);
 
-const AnimePage: FC = () => <AnimeScreen />;
+const AnimePage: FC = () => <DynamicAnimeScreen />;
 
 export default AnimePage;
