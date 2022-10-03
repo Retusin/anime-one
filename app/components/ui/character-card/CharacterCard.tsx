@@ -6,9 +6,9 @@ interface CharacterCardParams {
 }
 
 export const CharacterCard: FC<CharacterCardParams> = ({ item }) => (
-  <div className='pt-10'>
-    <div className='mainContainer bg-white py-8 px-14 rounded-t-xl'>
-      <div className='flex gap-16'>
+  <div className='container px-8 mx-auto '>
+    <div className='bg-white py-8 rounded-t-xl'>
+      <div className='md:flex gap-16'>
         <div className='pt-10'>
           <Image
             src={item.images.jpg.image_url}
@@ -18,8 +18,10 @@ export const CharacterCard: FC<CharacterCardParams> = ({ item }) => (
           />
         </div>
         <div>
-          <h2 className='text-[2.5rem] mt-6 mb-6'>{item.name}</h2>
-          <div className='flex items-baseline gap-5'>
+          <h2 className='text-[1.5rem] sm:text-[2.5rem] mt-6 mb-6'>
+            {item.name}
+          </h2>
+          <div className='sm:flex items-baseline gap-5'>
             <span className='font-semibold text-[20px]'>Nicknames: </span>
             <ul className='mt-4'>
               {item.nicknames.map((nick) => (
@@ -33,7 +35,9 @@ export const CharacterCard: FC<CharacterCardParams> = ({ item }) => (
       </div>
       <div>
         {item.about.length && (
-          <h3 className='my-6 text-[32px] font-semibold'>Description: </h3>
+          <h3 className='my-6 text-[24px] sm:text-[32px] font-semibold'>
+            Description:{' '}
+          </h3>
         )}
       </div>
       <div className='my-18'>
