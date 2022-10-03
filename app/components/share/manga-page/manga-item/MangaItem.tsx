@@ -18,7 +18,7 @@ export const MangaItem: FC<MangaItemParams> = ({ item }) => (
           className='rounded-xl shadow-2xl'
         />
         <div className='mt-4'>
-          <div className='text-xs font-semibold mb-2 max-w-[152px] mx-auto'>
+          <div className='text-xs font-semibold mb-2 max-w-[152px] mx-auto line-clamp-1'>
             {item.title_japanese}
           </div>
           <h2 className='line-clamp-1 text-xl max-w-[200px] mx-auto text-violet-900'>
