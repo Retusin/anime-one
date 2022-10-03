@@ -11,8 +11,8 @@ interface SliderParams {
 }
 
 export const Slider: FC<SliderParams> = ({ item, title, isAnime }) => (
-  <div>
-    <div className=' bg-white px-8 py-4 py-2 sm:py-8'>
+  <div className='py-1'>
+    <div className=' bg-white px-8 py-4 sm:py-8'>
       <h2 className='font-semibold line-clamp-1 sm:line-clamp-none text-[32px] mb-12'>
         {title}
       </h2>
@@ -52,7 +52,7 @@ export const Slider: FC<SliderParams> = ({ item, title, isAnime }) => (
                   width={300}
                   height={400}
                   alt={anime.anime.title}
-                  className='rounded-xl shadow-2xl'
+                  className='rounded-xl shadow-2xl mb-1'
                 />
                 <h4 className='font-semibold mt-4'>{anime.anime.title}</h4>
               </SplideSlide>
