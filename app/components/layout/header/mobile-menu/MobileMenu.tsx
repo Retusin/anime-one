@@ -9,7 +9,12 @@ export const MobileMenu: FC = () => {
   const { ref, isShow, setIsShow } = useOutside(false);
   return (
     <div className='flex md:hidden'>
-      <button type='button' onClick={() => setIsShow(true)}>
+      <button
+        type='button'
+        aria-label='Menu'
+        title='Menu'
+        onClick={() => setIsShow(true)}
+      >
         <FiMenu size={25} />
       </button>
       {isShow && (
