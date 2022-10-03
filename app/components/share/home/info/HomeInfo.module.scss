@@ -1,0 +1,11 @@
+.info {
+  @apply border-t-[#caccce] border-t-2 pt-6;
+
+  &_wrapper {
+    @apply container flex flex-col gap-3 pb-[130px] mt-2;
+  }
+
+  &_title {
+    @apply text-[32px] font-medium;
+  }
+}

@@ -1,0 +1,11 @@
+.new {
+  @apply container py-8;
+
+  &_title {
+    @apply text-[32px] font-medium mb-6;
+  }
+
+  &_menu {
+    @apply flex gap-2 justify-between items-center;
+  }
+}

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render menu 1`] = `
+<div>
+  <li>
+    <span
+      class="menu_item"
+    >
+      Home
+    </span>
+  </li>
+</div>
+`;

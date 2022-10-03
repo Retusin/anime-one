@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@layer components {
+  .mainContainer {
+    @apply max-w-[1310px] mx-auto px-[15px];
+  }
+}
+
+@layer base {
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    @apply text-sm bg-gray-300 text-gray-900 dark:bg-gray-900 dark:text-white;
+    font-family: 'Montserrat', sans-serif;
+  }
+}

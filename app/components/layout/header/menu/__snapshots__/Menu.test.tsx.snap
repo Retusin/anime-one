@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render menu 1`] = `
+<div>
+  <div>
+    <ul
+      class="menu"
+    >
+      <li>
+        <span
+          class="menu_item"
+        >
+          Anime
+        </span>
+      </li>
+      <li>
+        <span
+          class="menu_item"
+        >
+          Manga
+        </span>
+      </li>
+      <li>
+        <span
+          class="menu_item"
+        >
+          Characters
+        </span>
+      </li>
+      <li>
+        <span
+          class="menu_item"
+        >
+          Random
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

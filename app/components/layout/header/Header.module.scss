@@ -1,0 +1,11 @@
+.header {
+  @apply bg-[#343a40] text-white py-[12px] px-[15px] border-b-[5px] border-violet-500;
+
+  &_wrapper {
+    @apply mx-auto max-w-[1310px] px-[15px] flex items-center justify-between;
+  }
+
+  &_menu {
+    @apply mr-auto ml-12;
+  }
+}

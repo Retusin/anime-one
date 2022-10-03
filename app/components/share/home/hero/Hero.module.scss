@@ -1,0 +1,15 @@
+.hero {
+  @apply bg-[#e9ebee] shadow-outline;
+
+  &_wrapper {
+    @apply mx-auto max-w-[1310px] px-[15px] py-10;
+  }
+
+  &_title {
+    @apply text-[#212529] text-[32px] font-medium mb-7;
+  }
+
+  &_text {
+    @apply mb-4;
+  }
+}

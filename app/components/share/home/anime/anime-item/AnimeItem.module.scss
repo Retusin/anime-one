@@ -1,0 +1,39 @@
+.item {
+  @apply py-8 text-black;
+
+  &_wrapper {
+    @apply flex gap-10;
+  }
+
+  &_card {
+    @apply relative;
+  }
+
+  &_image {
+    @apply rounded-xl;
+  }
+
+  &_info {
+    @apply absolute top-2 left-2 rounded-xl shadow-lg bg-yellow-400 py-1 gap-1 px-2 flex items-center;
+  }
+
+  &_score {
+    @apply font-medium text-sm;
+  }
+
+  &_title {
+    @apply text-[20px] text-violet-900 mb-1;
+  }
+
+  &_subtitle {
+    @apply text-[12px] font-semibold;
+  }
+
+  &_params {
+    @apply flex gap-2 mt-2 mb-2 font-medium;
+  }
+
+  &_synopsis {
+    @apply max-w-[600px] line-clamp-4;
+  }
+}

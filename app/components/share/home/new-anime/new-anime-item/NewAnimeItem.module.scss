@@ -1,0 +1,11 @@
+.anime {
+  @apply max-w-[162px] cursor-pointer;
+
+  &_image {
+    @apply rounded-xl shadow-2xl;
+  }
+
+  &_title {
+    @apply line-clamp-1 mt-2 text-[20px] dark:text-gray-50 hover:text-violet-600 cursor-pointer transition-colors duration-200;
+  }
+}

@@ -1,0 +1,11 @@
+.anime {
+  @apply py-10 container py-10 max-w-[1310px] mx-auto;
+
+  &_container {
+    @apply bg-white rounded-xl shadow-outline;
+  }
+
+  &_list {
+    @apply container px-20;
+  }
+}
