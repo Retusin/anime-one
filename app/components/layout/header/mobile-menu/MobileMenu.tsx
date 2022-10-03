@@ -46,10 +46,12 @@ export const MobileMenu: FC = () => {
             <nav>
               <ul className='space-y-4'>
                 {MenuData.map((item) => (
-                  <li onClick={() => setIsShow(false)}>
-                    <Link href={item.link}>
-                      <div className='text-black'>{item.title}</div>
-                    </Link>
+                  <li key={item.title}>
+                    <button type='button' onClick={() => setIsShow(false)}>
+                      <Link href={item.link}>
+                        <div className='text-black'>{item.title}</div>
+                      </Link>
+                    </button>
                   </li>
                 ))}
               </ul>

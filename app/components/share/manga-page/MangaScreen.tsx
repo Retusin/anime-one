@@ -20,10 +20,10 @@ export const MangaScreen: FC = () => {
 
   return (
     <Layout title='Manga'>
-      <div className='py-10'>
-        <div className='mainContainer bg-white rounded-xl shadow-2xl '>
-          <Hero title='Manga' isCenter />
-          <ul className='px-6 grid grid-cols-4 gap-10 items-center py-8 text-center'>
+      <div className='py-10 container mx-auto px-8 '>
+        <div className='bg-white rounded-xl shadow-2xl '>
+          <Hero title='Manga' />
+          <ul className='px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 items-center py-8 text-center'>
             {manga.pages.map((page) =>
               page.data.map((repo: AnimeDataParams) => (
                 <MangaItem item={repo} key={repo.mal_id} />
