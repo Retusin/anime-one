@@ -1,11 +1,11 @@
 .new {
-  @apply container py-8;
+  @apply container py-8 mx-auto;
 
   &_title {
-    @apply text-[32px] font-medium mb-6;
+    @apply text-[32px] font-medium mb-6 text-center md:text-left;
   }
 
   &_menu {
-    @apply flex gap-2 justify-between items-center;
+    @apply grid grid-cols-1 gap-2 items-center mx-auto sm:grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7;
   }
 }

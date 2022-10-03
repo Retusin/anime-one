@@ -42,7 +42,7 @@ export const Header: FC = () => {
         <div className={styles.header_menu}>
           <Menu />
         </div>
-        <div className='mr-10'>{renderThemeChanger()}</div>
+        <div className='mr-6'>{renderThemeChanger()}</div>
         <div>
           <Search />
         </div>

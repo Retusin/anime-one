@@ -10,7 +10,7 @@ export const Footer: FC = () => (
         <span>Privacy</span>
         <span>For copyright holders</span>
       </div>
-      <div>© Retusin💙 2022</div>
+      <div className='hidden md:block'>© Retusin💙 2022</div>
     </div>
   </div>
 );

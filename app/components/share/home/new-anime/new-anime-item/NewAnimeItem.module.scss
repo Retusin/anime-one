@@ -1,5 +1,5 @@
 .anime {
-  @apply max-w-[162px] cursor-pointer;
+  @apply max-w-[162px] cursor-pointer mx-auto;
 
   &_image {
     @apply rounded-xl shadow-2xl;

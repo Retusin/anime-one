@@ -6,12 +6,12 @@ export const Hero: FC = () => (
     <div className='text-center container mx-auto py-10'>
       <div className='max-w-[1000px] mx-auto'>
         <h1 className='text-5xl font-bold'>AnimeOne</h1>
-        <p className='py-6'>
+        <p className='py-6 px-4'>
           For many years, Japanese animation has been a huge success around the
           world. These ribbons love for the bright plot, the original design and
           constant intensity of emotions.
         </p>
-        <p className='py-6'>
+        <p className='py-6 px-4'>
           Many fans like to watch anime online, but to do this often have to use
           several sources, as none of them can be called universal. But we have
           great news for anime fans! We have launched a new project AnimeOne

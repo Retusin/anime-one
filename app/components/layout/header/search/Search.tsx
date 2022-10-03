@@ -17,7 +17,7 @@ export const Search: FC = () => {
   };
 
   return (
-    <div className='relative'>
+    <div className='relative hidden xl:block'>
       <div className='mr-10'>
         <form onClick={() => setIsShow(true)}>
           <input

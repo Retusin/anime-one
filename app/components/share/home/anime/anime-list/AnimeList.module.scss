@@ -1,5 +1,5 @@
 .list {
-  @apply container py-8;
+  @apply container py-8 mx-auto;
 
   &_item {
     @apply bg-white shadow-xl rounded-xl py-10;

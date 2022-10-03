@@ -2,7 +2,7 @@
   @apply py-8 text-black;
 
   &_wrapper {
-    @apply flex gap-10;
+    @apply block md:flex gap-10;
   }
 
   &_card {
@@ -14,7 +14,7 @@
   }
 
   &_info {
-    @apply absolute top-2 left-2 rounded-xl shadow-lg bg-yellow-400 py-1 gap-1 px-2 flex items-center;
+    @apply absolute top-2 left-2 rounded-xl shadow-lg bg-yellow-400 py-1 gap-1 px-2 hidden md:flex items-center;
   }
 
   &_score {
@@ -30,7 +30,7 @@
   }
 
   &_params {
-    @apply flex gap-2 mt-2 mb-2 font-medium;
+    @apply gap-2 mt-2 mb-2 font-medium hidden sm:flex;
   }
 
   &_synopsis {
