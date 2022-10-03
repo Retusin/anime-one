@@ -4,8 +4,9 @@ export default function Document() {
   return (
     <Html lang='en' className='dark'>
       <Head>
-        <title>animeOne</title>
+        <title>OneAnime</title>
         <meta charSet='UTF-8' />
+        <meta name='description' content='Anime website' />
       </Head>
       <body>
         <Main />
