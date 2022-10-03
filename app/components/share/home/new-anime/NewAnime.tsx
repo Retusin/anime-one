@@ -16,7 +16,7 @@ export const NewAnime: FC<NewAnimeParams> = ({ mount, anime }) => {
     <section className={styles.new}>
       <h2 className={styles.new_title}>{mount} anime</h2>
       <ul className={styles.new_menu}>
-        {data.map((item) => (
+        {data.map((item: any) => (
           <NewAnimeItem anime={item} key={item.mal_id} />
         ))}
       </ul>
