@@ -3,6 +3,7 @@ import { FC, useEffect, useState } from 'react';
 import { BsFillMoonFill, BsSunFill } from 'react-icons/bs';
 
 import { Login, Logo, Menu, Search } from '@/components/layout';
+import { MobileMenu } from '@/components/layout/header/mobile-menu/MobileMenu';
 
 import styles from './Header.module.scss';
 
@@ -48,6 +49,9 @@ export const Header: FC = () => {
         </div>
         <div>
           <Login />
+        </div>
+        <div>
+          <MobileMenu />
         </div>
       </div>
     </header>

@@ -1,14 +1,13 @@
 .input {
+  @apply bg-gray-50 dark:bg-gray-900 text-black dark:text-white;
   position: relative;
   padding: 15px 20px 15px 20px;
   height: 40px;
   width: 300px;
-  color: #525252;
   font-size: 16px;
   font-weight: 100;
   border: none;
   border-radius: 5px;
-  background: linear-gradient(to right, #ffffff 0%, #464747 #f9f9f9 100%);
   transition: width 0.4s ease;
   outline: none;
 }

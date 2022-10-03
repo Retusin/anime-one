@@ -3,9 +3,9 @@ import React, { FC } from 'react';
 
 export const Hero: FC = () => (
   <div className='bg-violet-200 shadow-lg dark:bg-violet-900'>
-    <div className='text-center container mx-auto py-10'>
+    <div className='text-center container mx-auto py-8'>
       <div className='max-w-[1000px] mx-auto'>
-        <h1 className='text-5xl font-bold'>AnimeOne</h1>
+        <h1 className='text-4xl md:text-5xl font-bold'>AnimeOne</h1>
         <p className='py-6 px-4'>
           For many years, Japanese animation has been a huge success around the
           world. These ribbons love for the bright plot, the original design and

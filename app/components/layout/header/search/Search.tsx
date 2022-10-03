@@ -17,8 +17,8 @@ export const Search: FC = () => {
   };
 
   return (
-    <div className='relative hidden xl:block'>
-      <div className='mr-10'>
+    <div className='relative hidden xl:block dark:text-white'>
+      <div className='mr-10 text-white'>
         <form onClick={() => setIsShow(true)}>
           <input
             className={styles.input}
