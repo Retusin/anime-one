@@ -10,9 +10,8 @@ export const CardVideo: FC<CardVideoParams> = ({ item }) => (
     {item.trailer.url?.length && (
       <div className='bg-[rgba(14,56,57,0.95)] shadow-2xl rounded-lg'>
         <div className='mainContainer py-8'>
-          <div className='text-white text-[36px] flex justify-between items-center mb-14'>
+          <div className='text-white text-[24px] sm:text-[36px]  mb-14'>
             <h2>Watch trailer «{item.title}»</h2>
-            <span>{item?.year}</span>
           </div>
           <div className='rounded-xl'>
             <ReactPlayer

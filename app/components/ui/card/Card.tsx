@@ -17,10 +17,10 @@ export const Card: FC<CardParams> = ({ item, isAnime }) => {
   ));
   const animeStudio = animeStudios?.slice(0, 1);
   return (
-    <div className='pt-10'>
-      <div className='mainContainer bg-white py-8 px-14 rounded-t-xl'>
-        <div className='flex gap-16'>
-          <div className='pt-10'>
+    <div className='container px-8 mx-auto pt-10'>
+      <div className=' bg-white py-8 px-5 sm:px-14 rounded-t-xl'>
+        <div className='md:flex gap-16'>
+          <div className='pt-10 mb-8 md:mb-0'>
             <Image
               src={item.images.jpg.large_image_url}
               width={250}
@@ -35,10 +35,12 @@ export const Card: FC<CardParams> = ({ item, isAnime }) => {
                 {item.score > 0 ? `${item.score.toFixed(0)}` : '0'}/10
               </span>
             </div>
-            <h2 className='text-[2.5rem] mt-6 mb-6'>{item.title}</h2>
+            <h2 className='text-[1.5rem] md:text-[2.5rem] mt-6 mb-6'>
+              {item.title}
+            </h2>
 
             {isAnime ? (
-              <div className='flex items-center gap-20'>
+              <div className='hidden sm:flex items-center gap-5 md:gap-20'>
                 {' '}
                 <ul className='flex flex-col gap-y-5 text-gray-600 font-regular'>
                   <li>Type: </li>
@@ -80,10 +82,12 @@ export const Card: FC<CardParams> = ({ item, isAnime }) => {
         </div>
 
         {item.synopsis.length && (
-          <h3 className='mt-24 text-[32px] font-semibold'>Description</h3>
+          <h3 className='mt-8 sm:mt-24 text-[24px] sm:text-[32px] font-semibold'>
+            Description
+          </h3>
         )}
 
-        <div className='my-12'>
+        <div className='my-5 sm:my-12'>
           <p>{item?.synopsis}</p>
         </div>
       </div>
