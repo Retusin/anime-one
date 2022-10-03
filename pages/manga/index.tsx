@@ -1,7 +1,13 @@
+import dynamic from 'next/dynamic';
 import { FC } from 'react';
 
-import { MangaScreen } from '@/components/share';
+const DynamicMangaScreen = dynamic(
+  () =>
+    import('@/components/share/manga-page/MangaScreen').then(
+      (mod) => mod.MangaScreen
+    ) as any
+);
 
-const MangaPage: FC = () => <MangaScreen />;
+const MangaPage: FC = () => <DynamicMangaScreen />;
 
 export default MangaPage;
