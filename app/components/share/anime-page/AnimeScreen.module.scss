@@ -1,5 +1,5 @@
 .anime {
-  @apply py-10 container py-10 max-w-[1310px] mx-auto;
+  @apply py-10 container mx-auto px-8;
 
   &_container {
     @apply bg-white rounded-xl shadow-outline;
