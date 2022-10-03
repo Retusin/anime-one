@@ -154,13 +154,6 @@ interface AnimeDataParams {
     youtube_id: string;
     url: string;
     embed_url: string;
-    images: {
-      image_url: string;
-      small_image_url: string;
-      medium_image_url: string;
-      large_image_url: string;
-      maximum_image_url: string;
-    };
   };
   approved: boolean;
   titles: [
@@ -265,6 +258,35 @@ interface AnimeDataParams {
     {
       mal_id: number;
       type: string;
+      name: string;
+      url: string;
+    }
+  ];
+  relations: [
+    {
+      relation: string;
+      entry: [
+        {
+          mal_id: number;
+          type: string;
+          name: string;
+          url: string;
+        }
+      ];
+    }
+  ];
+  theme: {
+    openings: [string];
+    endings: [string];
+  };
+  external: [
+    {
+      name: string;
+      url: string;
+    }
+  ];
+  streaming: [
+    {
       name: string;
       url: string;
     }
